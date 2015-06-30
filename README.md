@@ -1,5 +1,7 @@
 # queryStyle
 
+[![Join the chat at https://gitter.im/ghoullier/query-style](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ghoullier/query-style?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![NPM version][npm-version-image]][npm-url]
 [![Gitter][gitter-image]][gitter-url]
 [![Dependency Status][dependency-status-image]][dependency-status-url]
