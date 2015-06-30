@@ -2,7 +2,6 @@
 
 [![NPM version][npm-version-image]][npm-url]
 [![Gitter][gitter-image]][gitter-url]
-[![Build Status][build-status-image]][build-status-url]
 [![Dependency Status][dependency-status-image]][dependency-status-url]
 
 Lightweight computed style query engine.
@@ -55,9 +54,6 @@ var matches = queryStyle({
 
 [gitter-image]: https://badges.gitter.im/Join%20Chat.svg
 [gitter-url]: https://gitter.im/ghoullier/query-style
-
-[build-status-image]: http://img.shields.io/travis/ghoullier/query-style.svg?style=flat
-[build-status-url]: http://travis-ci.org/ghoullier/query-style
 
 [dependency-status-image]: http://img.shields.io/gemnasium/ghoullier/query-style.svg?style=flat
 [dependency-status-url]: https://gemnasium.com/ghoullier/query-style
