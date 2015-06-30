@@ -1,0 +1,31 @@
+{
+  "name": "query-style",
+  "version": "1.0.0",
+  "description": "Lightweight computed style query engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**.js"
+  },
+  "dependencies": {
+    "tape": "~4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghoullier/query-style.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ghoullier/query-style/issues"
+  },
+  "homepage": "https://github.com/ghoullier/query-style#readme",
+  "keywords": [
+    "dom",
+    "style",
+    "query"
+  ],
+  "author": {
+    "name": "Grégory Houllier",
+    "url": "https://twitter.com/ghoullier"
+  },
+  "contributors": [],
+  "license": "MIT"
+}
