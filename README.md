@@ -15,7 +15,7 @@ $ npm install query-style
 ## Require
 
 ```js
-var queryStyle = require("query-style");
+const queryStyle = require("query-style");
 ```
 
 ## Documentation
@@ -27,7 +27,7 @@ var queryStyle = require("query-style");
 All float: left nodes
 
 ```js
-var matches = queryStyle({
+const matches = queryStyle({
   float: 'left'
 });
 ```
@@ -35,7 +35,7 @@ var matches = queryStyle({
 All float: left div
 
 ```js
-var matches = queryStyle({
+const matches = queryStyle({
   float: 'left'
 }, document.querySelectorAll('div'));
 ```
@@ -45,10 +45,8 @@ Using function as criteria
 All elements with a zIndex higher than 1000
 
 ```js
-var matches = queryStyle({
-  zIndex: function(zIndex) {
-    return zIndex > 1000;
-  }
+const matches = queryStyle({
+  zIndex: (value) => value > 1000
 });
 ```
 

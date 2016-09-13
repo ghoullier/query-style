@@ -7,26 +7,16 @@
     "test": "tape test/**.js"
   },
   "devDependencies": {
-    "tape": "~4.0.0",
-    "browserify": "^10.2.4",
+    "tape": "^4.0.3",
     "testling": "^1.7.1"
   },
   "testling": {
     "files": "test/*.js",
     "browsers": {
-      "ie": [
-        9,
-        10
-      ],
-      "firefox": [
-        25
-      ],
       "chrome": [
-        31
-      ],
-      "safari": [
-        5.1,
-        6
+        51,
+        52,
+        53
       ]
     }
   },
