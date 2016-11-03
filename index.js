@@ -16,7 +16,7 @@
     // Get node computed style
     const style = getComputedStyle(node)
     // Reduce criteria to match style
-    return Object.entries(criteria).reduce((found, [ property, value ]) => {
+    return criteria.reduce((found, [ property, value ]) => {
       // Match style value to criteria
       return found && (('function' === typeof value) ? value(style[property]) : value === style[property])
     }, true)
