@@ -12,19 +12,15 @@
   // Get all nodes in current document
   const all = () => [...document.querySelectorAll('*')]
   // Match criteria in computed style
-  const match = (criteria = {}) => (node) => {
+  const match = (criteria) => (node) => {
+    // Get node computed style
     const style = getComputedStyle(node)
-    let found = true
-    for (const [property, value] of Object.entries(criteria)) {
-      if ('function' === typeof value) {
-        found = found && value(style[property])
-      }
-      else {
-        found = found && (value === style[property])
-      }
-    }
-    return found
+    // Reduce criteria to match style
+    return Object.entries(criteria).reduce((found, [ property, value ]) => {
+      // Match style value to criteria
+      return found && (('function' === typeof value) ? value(style[property]) : value === style[property])
+    }, true)
   }
-
-  return (criteria, nodes = all()) => nodes.filter(match(criteria))
+  // Get queryStyle function
+  return (criteria = {}, nodes = all()) => nodes.filter(match(Object.entries(criteria)))
 })
