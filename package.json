@@ -1,26 +1,8 @@
 {
   "name": "query-style",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Lightweight computed style query engine",
   "main": "index.js",
-  "scripts": {
-    "test": "tape test/**.js"
-  },
-  "devDependencies": {
-    "browserify": "^13.1.0",
-    "tape": "^4.6.0",
-    "testling": "^1.7.1"
-  },
-  "testling": {
-    "files": "test/*.js",
-    "browsers": {
-      "chrome": [
-        51,
-        52,
-        53
-      ]
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ghoullier/query-style.git"
