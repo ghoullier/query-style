@@ -8,9 +8,10 @@ Lightweight computed style query engine.
 
 ## Install
 
-```
-$ npm install query-style
-```
+There are several ways to get a copy of query-style. Pick whichever one you like:
+
+- Use it via UNPKG: https://unpkg.com/query-style/index.js. This is a simple way to embed it on a webpage without having to do any other setup.
+- Install via NPM: `npm install --save query-style`
 
 ## Require
 
