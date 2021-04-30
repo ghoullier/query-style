@@ -1,8 +1,12 @@
 {
   "name": "query-style",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Lightweight computed style query engine",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
+  "engines": {
+    "node": ">=12"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ghoullier/query-style.git"

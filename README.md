@@ -17,7 +17,7 @@ There are several ways to get a copy of query-style. Pick whichever one you like
 ## Require
 
 ```js
-const queryStyle = require("query-style");
+import queryStyle from "query-style"
 ```
 
 ## Documentation
@@ -30,16 +30,19 @@ All float: left nodes
 
 ```js
 const matches = queryStyle({
-  float: 'left'
-});
+  float: "left",
+})
 ```
 
 All float: left div
 
 ```js
-const matches = queryStyle({
-  float: 'left'
-}, document.querySelectorAll('div'));
+const matches = queryStyle(
+  {
+    float: "left",
+  },
+  document.querySelectorAll("div"),
+)
 ```
 
 Using function as criteria
@@ -48,15 +51,13 @@ All elements with a zIndex higher than 1000
 
 ```js
 const matches = queryStyle({
-  zIndex: (value) => value > 1000
-});
+  zIndex: (value) => value > 1000,
+})
 ```
 
 [gitter-image]: https://badges.gitter.im/Join%20Chat.svg
 [gitter-url]: https://gitter.im/ghoullier/query-style
-
 [dependency-status-image]: http://img.shields.io/gemnasium/ghoullier/query-style.svg?style=flat
 [dependency-status-url]: https://gemnasium.com/ghoullier/query-style
-
 [npm-version-image]: http://img.shields.io/npm/v/query-style.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/query-style
